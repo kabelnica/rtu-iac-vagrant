@@ -18,4 +18,7 @@ Vagrant.configure("2") do |config|
 
   end
 
+  # Provision shell scripts to set up environment after initial install
+  config.vm.provision :shell, path: "provision/nginx.sh"
+
 end
